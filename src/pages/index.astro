@@ -3,14 +3,86 @@
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>title</title>
+
+    <style>
+      html {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      h2 {
+        background-color: blueviolet;
+      }
+      p {
+        color: red;
+        margin: 25px;
+      }
+      .dorado {
+        color: gold;
+        background-color: black;
+      }
+
+      img {
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        transition: all 1s ease-out;
+      }
+
+      .carta {
+        max-width: 500px;
+        min-height: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        border: ridge 10px black;
+        border-radius: 15px;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="carta">
+      <h1>Título 1</h1>
+      <h3>Título 2</h3>
+
+      <img
+        src="https://images.pexels.com/photos/1716861/pexels-photo-1716861.jpeg?auto=compress&cs=tinysrgb&w=630&h=375&dpr=1"
+      />
+
+      <p>
+        Todo lo que yo escriba aquí será un párrafo. Y no importa el tamaño del
+        texto.
+      </p>
+    </article>
+
+    <script>
+      /*
+      let seVeElTitulo = true;
+      const titulo = document.querySelector("h1");
+      const boton = document.getElementById("btn");
+
+      boton.addEventListener("click", () => {
+        if (seVeElTitulo) {
+          seVeElTitulo = false;
+          titulo.style.display = "none";
+        } else {
+          seVeElTitulo = true;
+          titulo.style.display = "block";
+        }
+      });
+	  */
+    </script>
+  </body>
 </html>
